@@ -1,0 +1,83 @@
+/* Configuración general del lienzo y página con Paleta Neón / Cyberpunk */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b0f19;
+    color: #f8fafc;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    padding: 20px;
+    gap: 20px;
+}
+
+#canvas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+canvas {
+    background-color: #111827;
+    border: 2px solid #8b5cf6;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.25);
+}
+
+/* Panel de control flotante */
+.panel {
+    background-color: #1f2937;
+    padding: 20px;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    border: 1px solid #374151;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+h2 {
+    margin-top: 0;
+    color: #ec4899;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h3 {
+    color: #38bdf8;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    border-bottom: 1px solid #374151;
+    padding-bottom: 3px;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 0.85rem;
+    color: #9ca3af;
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type=range] {
+    width: 100%;
+    margin-top: 4px;
+    accent-color: #ec4899;
+}
+
+.val {
+    color: #a855f7;
+    font-weight: bold;
+}
+
+button#btnAutoRotar:hover {
+    filter: brightness(1.1);
+}
